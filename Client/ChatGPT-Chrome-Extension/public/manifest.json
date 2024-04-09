@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "LinkGuardExtension",
+  "description": "Check if a link is safe to open - Made by Hungw",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "./index.html",
+    "default_icon": "./openai-avatar.png"
+  }
+}
